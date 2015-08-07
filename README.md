@@ -17,24 +17,11 @@ mac下终端输入命令
 linux下在[这里](https://github.com/basho/rebar) 下载源码编译或者直接下载rebar二进制文件，之后将rebar拷贝到`/usr/local/bin/`中，就能直接使用rebar命令了
 
 ##开始编译
-cd进simple-erlang-game目录，终端中执行
-    
-    $ ./start.py rebuild
+cd进simple-erlang-game目录，终端中执行`./start.py rebuild`，第一次编译时需要获取依赖库，编译时会提示缺少几个.erl文件，再运行一次`./start.py rebuild`就能自动生成缺少的文件了，之后再有代码修改可以直接运行`./start.py build`，这样不用执行`rebar get-deps`和生成`proto`的操作，会比`./start.py rebuild`更快
 
-第一次编译时需要获取依赖库，编译时会提示缺少几个.erl文件，再运行一次
-    
-    $ ./start.py rebuild
-
-就能自动生成缺少的文件了，之后再有代码修改可以直接运行
-    
-    $ ./start.py build
-
-这样不用执行`rebar get-deps`和生成`proto`的操作，会比
-    
-    $ ./start.py rebuild
-
-更快
-
+##erlang otp18 编译报错
+在otp18中erlang移除了array/0, dict/0, digraph/0, gb_set/0, gb_tree/0, queue/0, set/0这几种类型，emysql编译会报错
+解决方法：用array:array/0, dict:dict/0, digraph:graph/0, gb_set:set/0, gb_tree:tree/0, queue:queue/0, sets:set/0来替代报错的类型
 
 开启服务器
 ==================
@@ -72,6 +59,7 @@ cd进simple-erlang-game目录，终端中执行
         来连接上`game`节点，`db_session`节点同理
 
     通过命令
+
         $ ps aux | grep application:ensure_all_started 
         来查看节点进程信息 
 
@@ -80,6 +68,9 @@ cd进simple-erlang-game目录，终端中执行
         $ ./start.py stop 
     结束`game`和`db_session`节点进程
  
+##用sync来热更新代码
+    开启application后可以在控制台中输入以下命令`sync:go().`或者`application:start(sync)`
+    sync运行后只要erlang代码有修改并保存，就会自动编译并加载，调试bug会更简单方便
 
 客户端
 ==================
