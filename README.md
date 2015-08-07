@@ -20,8 +20,8 @@ linux下在[这里](https://github.com/basho/rebar) 下载源码编译或者直�
 cd进simple-erlang-game目录，终端中执行`./start.py rebuild`，第一次编译时需要获取依赖库，编译时会提示缺少几个.erl文件，再运行一次`./start.py rebuild`就能自动生成缺少的文件了，之后再有代码修改可以直接运行`./start.py build`，这样不用执行`rebar get-deps`和生成`proto`的操作，会比`./start.py rebuild`更快
 
 ##erlang otp18 编译报错
-在otp18中erlang移除了array/0, dict/0, digraph/0, gb_set/0, gb_tree/0, queue/0, set/0这几种类型，emysql编译会报错
-解决方法：用array:array/0, dict:dict/0, digraph:graph/0, gb_set:set/0, gb_tree:tree/0, queue:queue/0, sets:set/0来替代报错的类型
+在otp18中erlang移除了`array/0, dict/0, digraph/0, gb_set/0, gb_tree/0, queue/0, set/0`这几种类型，emysql编译会报错
+解决方法：用`array:array/0, dict:dict/0, digraph:graph/0, gb_set:set/0, gb_tree:tree/0, queue:queue/0, sets:set/0`来替代报错的类型
 
 开启服务器
 ==================
