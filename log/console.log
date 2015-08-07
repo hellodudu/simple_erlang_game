@@ -1,0 +1,255 @@
+2015-08-07 11:35:59.684 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 11:35:59.755 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 11:35:59.763 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 11:35:59.873 [info] <0.80.0>@game_app:start:23 ranch start_listener success
+2015-08-07 11:35:59.954 [info] <0.80.0>@game_app:start:32 game_sup start ok
+2015-08-07 11:35:59.954 [info] <0.80.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 11:36:02.956 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:05.958 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:08.960 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:10.078 [warning] <0.6.0> lager_error_logger_h dropped 1122 messages in the last second that exceeded the limit of 50 messages/sec
+2015-08-07 11:36:10.557 [info] <0.7.0> Application sync started on node 'game@127.0.0.1'
+2015-08-07 11:36:11.962 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:14.963 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:17.965 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:20.966 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:23.968 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:26.969 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:29.013 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:29.069 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:29.103 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:29.113 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:29.237 [info] <0.86.0>@db_session:start:28 role<10> load complete!
+2015-08-07 11:36:29.237 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 11:36:29.239 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:29.970 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:36:32.285 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:36:36.047 [info] <0.7.0> Application sync started on node 'db_session@127.0.0.1'
+2015-08-07 11:36:49.238 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 11:36:49.329 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 11:37:07.764 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 11:37:07.764 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 11:37:14.591 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_get_role_id_list,0,[]}
+2015-08-07 11:37:14.591 [info] <0.69.0>@client:handle_info:137 execute successful!
+2015-08-07 11:37:26.621 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:role_id
+
+2015-08-07 11:37:26.621 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:account_id
+2015-08-07 11:37:26.621 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:name
+2015-08-07 11:37:26.621 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:sex
+2015-08-07 11:37:26.621 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:level
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = SETrole:10:diamond
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_interface:save_role:32 save_role result = ok ok ok ok ok ok 
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:role_id
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:account_id
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:name
+2015-08-07 11:37:26.622 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:sex
+2015-08-07 11:37:26.624 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:level
+2015-08-07 11:37:26.624 [info] <0.3038.0>@redis_query:q:17 redis_query q Command = GETrole:10:diamond
+2015-08-07 11:37:26.625 [info] <0.3038.0>@redis_interface:load_role:22 redis load_role result = {role,ok,ok,ok,ok,ok,ok,undefined,undefined}
+2015-08-07 11:37:26.625 [info] <0.89.0>@db_session:handle_info:66 query<insert into role set role_id=10, account_id=2, name="role12", sex=1, level=1, diamond=20 > execute successful
+2015-08-07 11:37:26.626 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_create_role,0,"\n"}
+2015-08-07 11:37:26.626 [info] <0.69.0>@client:handle_info:137 execute successful!
+2015-08-07 11:39:38.282 [warning] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_query.erl:22: Warning: function qp/1 is unused
+/home/dudu/workspace/simple_erlang_game/apps/game/src/redis_query.erl:25: Warning: function qp/2 is unused
+/home/dudu/workspace/simple_erlang_game/apps/game/src/redis_query.erl:0: Recompiled with 1 warnings
+2015-08-07 11:39:38.297 [info] <0.2118.0> redis_query: Reloaded! (Beam changed.)
+2015-08-07 11:39:55.297 [info] <0.3038.0>@redis_interface:save_role:32 save_role result = {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} 
+2015-08-07 11:39:55.299 [info] <0.3038.0>@redis_interface:load_role:22 redis load_role result = {role,{ok,<<"11">>},{ok,<<"2">>},{ok,<<"2">>},{ok,<<"1">>},{ok,<<"1">>},{ok,<<"20">>},undefined,undefined}
+2015-08-07 11:39:55.300 [info] <0.89.0>@db_session:handle_info:66 query<insert into role set role_id=11, account_id=2, name="role13", sex=1, level=1, diamond=20 > execute successful
+uccessful!
+2015-08-07 11:41:00.460 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_interface.erl:0: Recompiled.
+2015-08-07 11:41:00.481 [info] <0.2118.0> redis_interface: Reloaded! (Beam changed.)
+2015-08-07 11:46:58.433 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_interface.erl:0: Recompiled.
+2015-08-07 11:46:58.489 [info] <0.2118.0> redis_interface: Reloaded! (Beam changed.)
+2015-08-07 11:48:20.753 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/role_mgr.erl:0: Recompiled.
+2015-08-07 11:48:20.764 [info] <0.2118.0> role_mgr: Reloaded! (Beam changed.)
+2015-08-07 11:50:12.790 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_interface.erl:0: Recompiled.
+2015-08-07 11:50:12.807 [info] <0.2118.0> redis_interface: Reloaded! (Beam changed.)
+2015-08-07 11:50:44.335 [error] <0.3038.0>@connector:handle_info:71 Error in connector while handling message with 
+                                       Error:error, Reason:{badmatch,{ok,<<79,75>>}}, and stacktrace: [{redis_interface,save_role,2,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,101,100,105,115,95,105,110,116,101,114,102,97,99,101,46,101,114,108]},{line,26}]},{role_mgr,handle,1,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,111,108,101,95,109,103,114,46,101,114,108]},{line,146}]},{connector,handle_info,2,[{file,[115,114,99,47,99,111,110,110,101,99,116,111,114,46,101,114,108]},{line,61}]},{gen_server,try_dispatch,4,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,615}]},{gen_server,handle_msg,5,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,[112,114,111,99,95,108,105,98,46,101,114,108]},{line,239}]}]
+2015-08-07 11:50:49.337 [error] <0.69.0>@client:handle_info:167 Client receiving error with reason:timeout
+2015-08-07 11:50:49.337 [info] <0.68.0>@client_app:stop:13 client stopped at node nonode@nohost
+2015-08-07 11:50:49.339 [info] <0.7.0> Application client exited with reason: normal
+2015-08-07 11:51:41.015 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_interface.erl:0: Recompiled.
+2015-08-07 11:51:41.054 [info] <0.2118.0> redis_interface: Reloaded! (Beam changed.)
+2015-08-07 11:52:18.710 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 11:52:18.751 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 11:52:18.761 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 11:52:18.853 [info] <0.80.0>@game_app:start:23 ranch start_listener success
+2015-08-07 11:52:18.912 [info] <0.80.0>@game_app:start:32 game_sup start ok
+2015-08-07 11:52:18.912 [info] <0.80.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 11:52:21.546 [warning] <0.6.0> lager_error_logger_h dropped 1433 messages in the last second that exceeded the limit of 50 messages/sec
+2015-08-07 11:52:21.682 [info] <0.7.0> Application sync started on node 'game@127.0.0.1'
+2015-08-07 11:52:21.914 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:52:24.914 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:52:27.915 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:52:30.916 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:52:31.007 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:31.033 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:31.056 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:31.060 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:31.133 [info] <0.86.0>@db_session:start:28 role<12> load complete!
+2015-08-07 11:52:31.133 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 11:52:31.133 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:33.728 [info] <0.7.0> Application sync started on node 'db_session@127.0.0.1'
+2015-08-07 11:52:34.189 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:52:33.917 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:52:34.189 [info] <0.2112.0>@game_app:update_connect:50 db_session connect success!
+2015-08-07 11:52:49.865 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 11:52:49.929 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 11:52:55.744 [info] <0.7.0> Application sync started on node nonode@nohost
+2015-08-07 11:53:04.283 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 11:53:04.283 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 11:53:14.257 [info] <0.3014.0>@redis_interface:save_role:32 save_role result = {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} {ok,<<"OK">>} 
+2015-08-07 11:53:14.257 [error] <0.3014.0>@connector:handle_info:71 Error in connector while handling message with 
+                                       Error:error, Reason:{badmatch,{ok,<<49,50>>}}, and stacktrace: [{redis_interface,load_role,1,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,101,100,105,115,95,105,110,116,101,114,102,97,99,101,46,101,114,108]},{line,13}]},{role_mgr,handle,1,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,111,108,101,95,109,103,114,46,101,114,108]},{line,147}]},{connector,handle_info,2,[{file,[115,114,99,47,99,111,110,110,101,99,116,111,114,46,101,114,108]},{line,61}]},{gen_server,try_dispatch,4,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,615}]},{gen_server,handle_msg,5,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,[112,114,111,99,95,108,105,98,46,101,114,108]},{line,239}]}]
+2015-08-07 11:53:19.253 [error] <0.69.0>@client:handle_info:167 Client receiving error with reason:timeout
+2015-08-07 11:53:19.253 [info] <0.68.0>@client_app:stop:13 client stopped at node nonode@nohost
+2015-08-07 11:53:19.255 [info] <0.7.0> Application client exited with reason: normal
+2015-08-07 11:55:24.168 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 11:55:24.226 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 11:55:24.231 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 11:55:24.318 [info] <0.80.0>@game_app:start:23 ranch start_listener success
+2015-08-07 11:55:24.362 [info] <0.80.0>@game_app:start:32 game_sup start ok
+2015-08-07 11:55:24.363 [info] <0.80.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 11:55:27.364 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:55:27.484 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 11:55:27.509 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 11:55:27.541 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 11:55:27.547 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 11:55:27.640 [info] <0.86.0>@db_session:start:28 role<12> load complete!
+2015-08-07 11:55:27.640 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 11:55:27.640 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 11:55:30.366 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:55:30.688 [info] <0.2112.0>@game_app:update_connect:50 db_session connect success!
+2015-08-07 11:55:30.688 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:55:34.324 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 11:55:34.401 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 11:55:43.241 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 11:55:43.241 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 11:55:56.396 [error] <0.2116.0>@connector:handle_info:71 Error in connector while handling message with 
+                                       Error:error, Reason:{badmatch,{ok,<<79,75>>}}, and stacktrace: [{redis_interface,save_role,2,[{file,[115,114,99,47,114,101,100,105,115,95,105,110,116,101,114,102,97,99,101,46,101,114,108]},{line,26}]},{role_mgr,handle,1,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,111,108,101,95,109,103,114,46,101,114,108]},{line,146}]},{connector,handle_info,2,[{file,[115,114,99,47,99,111,110,110,101,99,116,111,114,46,101,114,108]},{line,61}]},{gen_server,try_dispatch,4,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,615}]},{gen_server,handle_msg,5,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,[112,114,111,99,95,108,105,98,46,101,114,108]},{line,239}]}]
+2015-08-07 11:56:01.393 [error] <0.69.0>@client:handle_info:167 Client receiving error with reason:timeout
+2015-08-07 11:56:01.394 [info] <0.68.0>@client_app:stop:13 client stopped at node nonode@nohost
+2015-08-07 11:56:01.395 [info] <0.7.0> Application client exited with reason: normal
+2015-08-07 11:57:51.842 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:57:52.276 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 11:57:52.356 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 11:57:52.364 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 11:57:52.456 [info] <0.83.0>@game_app:start:23 ranch start_listener success
+2015-08-07 11:57:52.568 [info] <0.83.0>@game_app:start:32 game_sup start ok
+2015-08-07 11:57:52.568 [info] <0.83.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 11:57:55.570 [info] <0.2115.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:57:57.727 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 11:57:57.773 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 11:57:57.823 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 11:57:57.828 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 11:57:57.934 [info] <0.86.0>@db_session:start:28 role<12> load complete!
+2015-08-07 11:57:57.934 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 11:57:57.934 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 11:57:58.572 [info] <0.2115.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:58:00.978 [info] <0.2115.0>@game_app:update_connect:50 db_session connect success!
+2015-08-07 11:58:00.978 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:58:05.114 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 11:58:05.170 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 11:58:09.585 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 11:58:09.585 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 11:58:17.602 [error] <0.2119.0>@connector:handle_info:71 Error in connector while handling message with 
+                                       Error:error, Reason:{badmatch,{ok,<<79,75>>}}, and stacktrace: [{redis_interface,save_role,2,[{file,[115,114,99,47,114,101,100,105,115,95,105,110,116,101,114,102,97,99,101,46,101,114,108]},{line,26}]},{role_mgr,handle,1,[{file,[47,104,111,109,101,47,100,117,100,117,47,119,111,114,107,115,112,97,99,101,47,115,105,109,112,108,101,95,101,114,108,97,110,103,95,103,97,109,101,47,97,112,112,115,47,103,97,109,101,47,115,114,99,47,114,111,108,101,95,109,103,114,46,101,114,108]},{line,146}]},{connector,handle_info,2,[{file,[115,114,99,47,99,111,110,110,101,99,116,111,114,46,101,114,108]},{line,61}]},{gen_server,try_dispatch,4,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,615}]},{gen_server,handle_msg,5,[{file,[103,101,110,95,115,101,114,118,101,114,46,101,114,108]},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,[112,114,111,99,95,108,105,98,46,101,114,108]},{line,239}]}]
+2015-08-07 11:58:22.596 [error] <0.69.0>@client:handle_info:167 Client receiving error with reason:timeout
+2015-08-07 11:58:22.596 [info] <0.68.0>@client_app:stop:13 client stopped at node nonode@nohost
+2015-08-07 11:58:22.597 [info] <0.7.0> Application client exited with reason: normal
+2015-08-07 11:59:38.553 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 11:59:38.581 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 11:59:38.587 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 11:59:38.673 [info] <0.80.0>@game_app:start:23 ranch start_listener success
+2015-08-07 11:59:38.734 [info] <0.80.0>@game_app:start:32 game_sup start ok
+2015-08-07 11:59:38.734 [info] <0.80.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 11:59:41.736 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:59:44.020 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 11:59:44.056 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 11:59:44.078 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 11:59:44.092 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 11:59:44.194 [info] <0.86.0>@db_session:start:28 role<12> load complete!
+2015-08-07 11:59:44.194 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 11:59:44.194 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 11:59:44.738 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 11:59:47.236 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 11:59:47.236 [info] <0.2112.0>@game_app:update_connect:50 db_session connect success!
+2015-08-07 11:59:51.915 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 11:59:52.011 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 12:00:03.229 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 12:00:03.229 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 12:00:09.567 [info] <0.2116.0>@redis_interface:save_role:32 save_role result = <<"OK">> <<"OK">> <<"OK">> <<"OK">> <<"OK">> <<"OK">> 
+2015-08-07 12:00:09.569 [info] <0.2116.0>@redis_interface:load_role:22 redis load_role result = {role,{ok,<<"12">>},{ok,<<"18">>},{ok,<<"18">>},{ok,<<"1">>},{ok,<<"1">>},{ok,<<"20">>},undefined,undefined}
+2015-08-07 12:00:09.569 [info] <0.2116.0>@role_mgr:handle:148 after write redis role record = {role,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+2015-08-07 12:00:09.569 [info] <0.89.0>@db_session:handle_info:66 query<insert into role set role_id=12, account_id=18, name="18", sex=1, level=1, diamond=20 > execute successful
+e successful!
+2015-08-07 12:02:01.730 [info] <0.2116.0>@redis_interface:save_role:32 save_role result = <<"OK">> <<"OK">> <<"OK">> <<"OK">> <<"OK">> <<"OK">> 
+2015-08-07 12:02:01.732 [info] <0.2116.0>@redis_interface:load_role:22 redis load_role result = {role,{ok,<<"13">>},{ok,<<"18">>},{ok,<<"19">>},{ok,<<"1">>},{ok,<<"1">>},{ok,<<"20">>},undefined,undefined}
+2015-08-07 12:02:01.732 [info] <0.2116.0>@role_mgr:handle:148 after write redis role record = {role,undefined,undefined,undefined,undefined,undefined,undefined,undefined,undefined}
+2015-08-07 12:02:01.732 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_create_role,0,"\r"}
+2015-08-07 12:02:01.732 [info] <0.69.0>@client:handle_info:137 execute successful!
+2015-08-07 12:02:01.733 [info] <0.89.0>@db_session:handle_info:66 query<insert into role set role_id=13, account_id=18, name="19", sex=1, level=1, diamond=20 > execute successful
+2015-08-07 14:26:20.844 [info] <0.7.0> Application lager started on node 'game@127.0.0.1'
+2015-08-07 14:26:20.905 [info] <0.7.0> Application ranch started on node 'game@127.0.0.1'
+2015-08-07 14:26:20.921 [info] <0.7.0> Application poolboy started on node 'game@127.0.0.1'
+2015-08-07 14:26:21.027 [info] <0.80.0>@game_app:start:23 ranch start_listener success
+2015-08-07 14:26:21.093 [info] <0.80.0>@game_app:start:32 game_sup start ok
+2015-08-07 14:26:21.094 [info] <0.80.0>@game_app:start:39 game start on node 'game@127.0.0.1', listening on port 2345
+2015-08-07 14:26:24.095 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:26.958 [warning] <0.6.0> lager_error_logger_h dropped 1432 messages in the last second that exceeded the limit of 50 messages/sec
+2015-08-07 14:26:27.096 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:27.111 [info] <0.7.0> Application sync started on node 'game@127.0.0.1'
+2015-08-07 14:26:30.097 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:33.098 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:36.099 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:39.064 [info] <0.7.0> Application lager started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:39.124 [info] <0.7.0> Application crypto started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:39.164 [info] <0.7.0> Application emysql started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:39.170 [info] <0.7.0> Application poolboy started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:39.263 [info] <0.86.0>@db_session:start:28 role<14> load complete!
+2015-08-07 14:26:39.263 [info] <0.86.0>@db_session:start:31 try connecting connector
+2015-08-07 14:26:39.263 [info] <0.7.0> Application db_session started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:39.100 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:42.101 [info] <0.2112.0>@game_app:update_connect:53 db_session did not connected yet!
+2015-08-07 14:26:42.288 [info] <0.2112.0>@game_app:update_connect:50 db_session connect success!
+2015-08-07 14:26:42.287 [info] <0.88.0>@db_session:update_connection:112 connect node<'game@127.0.0.1'> success
+2015-08-07 14:26:42.731 [info] <0.7.0> Application sync started on node 'db_session@127.0.0.1'
+2015-08-07 14:26:53.182 [info] <0.7.0> Application lager started on node nonode@nohost
+2015-08-07 14:26:53.252 [info] <0.7.0> Application client started on node nonode@nohost
+2015-08-07 14:26:57.416 [info] <0.7.0> Application sync started on node nonode@nohost
+2015-08-07 14:27:05.017 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_login,0}
+2015-08-07 14:27:05.017 [info] <0.69.0>@client:handle_info:129 execute successful!
+2015-08-07 14:27:14.783 [info] <0.3009.0>@role_mgr:handle:146 before write redis role record = {role,14,20,"21",1,1,20,undefined,undefined}
+2015-08-07 14:27:14.793 [info] <0.3009.0>@redis_interface:load_role:22 redis load_role result = {role,"14","20","21","1","1","20",undefined,undefined}
+2015-08-07 14:27:14.794 [info] <0.3009.0>@role_mgr:handle:149 after write redis role record = {role,"14","20","21","1","1","20",undefined,undefined}
+2015-08-07 14:27:14.794 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_create_role,0,[14]}
+2015-08-07 14:27:14.794 [info] <0.69.0>@client:handle_info:137 execute successful!
+2015-08-07 14:27:14.794 [info] <0.89.0>@db_session:handle_info:66 query<insert into role set role_id=14, account_id=20, name="21", sex=1, level=1, diamond=20 > execute successful
+2015-08-07 14:31:40.473 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_worker.erl:0: Recompiled.
+2015-08-07 14:31:40.510 [info] <0.2118.0> redis_worker: Reloaded! (Beam changed.)
+2015-08-07 14:31:54.201 [info] <0.3009.0>@role_mgr:handle:146 before write redis role record = {role,15,20,"role22",1,1,20,undefined,undefined}
+2015-08-07 14:31:54.201 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:role_id
+2015-08-07 14:31:54.202 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:account_id
+2015-08-07 14:31:54.202 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:namerole22
+2015-08-07 14:31:54.203 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:sex
+2015-08-07 14:31:54.203 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:level
+2015-08-07 14:31:54.203 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = SETrole:15:diamond
+2015-08-07 14:31:54.203 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:role_id
+2015-08-07 14:31:54.203 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:account_id
+2015-08-07 14:31:54.204 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:name
+2015-08-07 14:31:54.204 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:sex
+2015-08-07 14:31:54.204 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:level
+2015-08-07 14:31:54.204 [info] <0.2110.0>@redis_worker:handle_call:33 handle_call command = GETrole:15:diamond
+2015-08-07 14:31:54.204 [info] <0.3009.0>@redis_interface:load_role:22 redis load_role result = {role,"15","20","role22","1","1","20",undefined,undefined}
+2015-08-07 14:31:54.204 [info] <0.3009.0>@role_mgr:handle:149 after write redis role record = {role,"15","20","role22","1","1","20",undefined,undefined}
+2015-08-07 14:31:54.205 [info] <0.69.0>@client:handle_info:163 recv Respond = {sc_account_create_role,0,[15]}
+2015-08-07 14:31:54.205 [info] <0.69.0>@client:handle_info:137 execute successful!
+2015-08-07 14:32:21.751 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/redis_worker.erl:0: Recompiled.
+2015-08-07 14:32:21.772 [info] <0.2118.0> redis_worker: Reloaded! (Beam changed.)
+2015-08-07 14:32:44.571 [warning] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/role_mgr.erl:147: Warning: variable 'RetRecord' is unused
+/home/dudu/workspace/simple_erlang_game/apps/game/src/role_mgr.erl:0: Recompiled with 1 warnings
+2015-08-07 14:32:44.582 [info] <0.2118.0> role_mgr: Reloaded! (Beam changed.)
+2015-08-07 14:32:55.940 [info] <0.2118.0> /home/dudu/workspace/simple_erlang_game/apps/game/src/role_mgr.erl:0: Recompiled.
+2015-08-07 14:32:55.986 [info] <0.2118.0> role_mgr: Reloaded! (Beam changed.)
