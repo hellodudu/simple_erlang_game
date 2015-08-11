@@ -6,7 +6,9 @@
          get/1,
          set/2,
          expire/2,
-         delete/1
+         delete/1,
+         hmget/2,
+         hmset/1
         ]).
 
 %% query
@@ -38,3 +40,11 @@ expire(Key, Time) ->
 
 delete(Key) -> 
     q(["DEL", Key]).
+
+hmget(Key, Fields) ->
+    Ret = q(["HMGET", Key | Fields]),
+    lager:info("hmget result = ~p~n", [Ret]).
+
+hmset(KeyValuePairs) ->
+    Ret = q(["HMSet" | KeyValuePairs]),
+    lager:info("hmset result = ~p~n", [Ret]).

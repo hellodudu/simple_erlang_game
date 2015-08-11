@@ -144,6 +144,7 @@ handle({CsAccountCreateRole, Session}) when erlang:is_record(CsAccountCreateRole
 
                         %% 写redis
                         redis_interface:save_role(RoleId, StoreRoleRec),
+                        redis_interface:hmget(RoleId),
 
                         %% 发送到mysql
                         {db_session, 'db_session@127.0.0.1'} ! {create_role, StoreRoleRec},

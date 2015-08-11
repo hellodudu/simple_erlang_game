@@ -4,7 +4,8 @@
 
 -export([
          load_role/1,
-         save_role/2
+         save_role/2,
+         hmget/1
         ]).
 
 %% 读取角色
@@ -30,3 +31,13 @@ save_role(RoleID, RoleRec) ->
     redis_query:set(io_lib:format("role:~B:level", [RoleID]), RoleRec#role.level),
     redis_query:set(io_lib:format("role:~B:diamond", [RoleID]), RoleRec#role.diamond),
     true.
+
+hmget(RoleID) ->
+    Result = redis_query:hmget(io_lib:format("role:~B:role_id", [RoleID]), ["name", "age", "birthday"]),
+    lager:info("redis_interface hmget result = ~p~n", [Result]).
+
+hmset(RoleRecord) ->
+    KeyValuePairs = [io_lib:format("role:~B:name", [RoleRecord#role.role_id]), RoleRecord#role.name, io_lib:format("role:~B:level", [RoleRecord#role.level])],
+    lager:info("redis_interface KeyValuePairs = ~p~n", [KeyValuePairs]),
+    Result = redis_query:hmset(KeyValuePairs),
+    lager:info("redis_interface hmset result = ~p~n", [Result]).
